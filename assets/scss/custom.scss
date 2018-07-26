@@ -1,0 +1,147 @@
+/*
+ * McBoots 2018, v 0.1
+ */
+
+// override Bootstrap 4 SASS variables
+@import "_custom-overrides.scss";
+
+// include Bootstrap 4 SASS files
+@import "bootstrap/bootstrap";
+
+/* ==========================================================================
+   Iconography
+   ========================================================================== */
+
+//== TEMPORARY: use Glyphicons from Bootstrap 3
+//
+//## Specify custom location and filename of the included Glyphicons icon font. 
+
+//** Load fonts from this directory.
+@icon-font-path:          "../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";
+
+@import "glyphicons.scss";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+/* ==========================================================================
+   Navbar Toggle (Hamburger)
+   ========================================================================== */
+
+/* ==========================================================================
+   Primary Navigation
+   ========================================================================== */
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/* ==========================================================================
+   WordPress WYSIWYG Editor Styles
+   ========================================================================== */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*	Edit Button
+	vertical offsets (horz always 0)
+	blue 0, red -18, ylo -36, purple -54, pink -72, orange -90, green -108, cyan -126, plain -144
+	------------------------------*/
+a.post-edit-link {
+	font-size: 0;
+	color: transparent;
+	vertical-align: 10px;
+	margin-left: 6px;
+//	padding: 8px 8px 9px 8px;	// use this padding for colored pencil
+	padding: 8px 8px 8px 8px;	// use this padding for plain pencil
+	background: transparent url("../img/edit-buttons.png") 0 -144px no-repeat;
+	text-decoration: none;
+}
+a.post-edit-link:hover {
+	background-position: 0 -144px;
+	text-decoration: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@include media-breakpoint-up(sm) {
+	
+}
+
+@include media-breakpoint-up(md) {
+	.phone-only {
+		display: none !important;
+	}
+	.no-phone {
+		display: block;
+	}
+
+	/* Header: branding
+	------------------------------*/
+
+	/* Header: primary nav
+	------------------------------*/
+
+	/* Primary nav dropdown - overriding phone changes
+	------------------------------*/
+
+	/* Content
+	------------------------------*/
+
+	/* Gallery
+	------------------------------*/
+
+	/* Sidebar
+	------------------------------*/
+
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}
+
